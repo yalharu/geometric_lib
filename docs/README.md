@@ -1,21 +1,85 @@
+# Функции, описания и примеры
 
-# How to use calculator:
-1. Run `python calculate.py`
-2. Enter the figure name. Available are Circle, Square.
-3. Enter the function: Area or Perimeter.
-4. Enter figure sizes. Radius for circle, one side for square.
-5. Get the answer!
+## 'calculate.py'
+### 'def calc(fig, func, size):'
+- Программа вычисляет значения функции для указанной фигуры на основе ее размеров.
+- Пример вызова функции:
+```python
+>> calc('circle', 'area', [6])
+113,097335529
+```
 
-# Math formulas
-## Area
-- Circle: `S = πR²`
-- Rectangle: `S = ab`
-- Square: `S = a²`
-- Triangle: `S = sqrt(p * (p-a) * (p-b) * (p-c))` where p is semiperimeter
+## 'circle.py'
+### 'def area(r):'
+- Функция вычисляет площадь круга по заданному радиусу
+- Пример вызова функции:
+```python
+>> area(5)
+> 78.53981633974483
+```
 
-## Perimeter
-- Circle: `P = 2πR`
-- Rectangle: `P = 2a + 2b`
-- Square: `P = 4a`
-- Triangle: `P = a + b + c`
+## 'circle.py'
+### 'def perimeter(r):'
+- Функция вычисляет периметр круга по заданному радиусу
+- Пример вызова функции:
+```python
+>> perimeter(6)
+37,6991118431
+```
 
+## 'square.py'
+### 'def area(a):'
+- Функция вычисляет площадь квадрата по заданным значениям
+- Пример вызова функции:
+```python
+>> area(6)
+36
+```
+
+## 'square.py'
+### 'def perimeter(a):'
+- Функция вычисляет периметр квадрата по заданным значениям
+- Пример вызова функции:
+```python
+>> perimeter(6)
+24
+```
+
+## 'triangle.py'
+### 'def area(a, b, c):'
+- Функция вычисляет полупериметр треугольника по входным данным
+- Пример вызова функции:
+```python
+>> area(2, 3, 4)
+4,5
+```
+
+## 'triangle.py'
+### 'def perimeter(a, b, c)'
+- Функция вычисляет периметр треугольника по входным данным
+- Пример вызова функции:
+```python
+>> area(2, 3, 4)
+9
+```
+# История изменения проекта с хешами комитов
+
+1. __d76db2a__ - L-04: Add calculate.py
+    
+    Добавлен файл 'calculate.py' для выполнения вычислений
+
+2. __51c40eb__ -  L-04: Doc updated for triangle
+    
+    Обновлена документация по работе с треугольниками.
+
+3. __d080c78__ - L-04: Triangle added
+    
+    Добавлена функциональность для работы с треугольниками.
+
+4. __d078c8d__ - L-03: Docs added
+    
+   Добавлена документация по предыдущим функциям.
+
+5. __8ba9aeb__ L-03: Circle and square added
+
+    Добавлены функции для работы с кругами и квадратами.
