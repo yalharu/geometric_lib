@@ -1,0 +1,3 @@
+[submodule "my-library"]
+	path = my-library
+	url = https://github.com/yalharu/geometric_lib.git
