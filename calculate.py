@@ -35,7 +35,7 @@ def calc(fig, func, size):
         a, b, c = size
         assert a + b > c and a + c > b and c + b > a
 
-    result = eval(f'{fig}.{func}(*{size}')
+    result = eval(f'{fig}.{func}(*{size})')
     return result
 
 
